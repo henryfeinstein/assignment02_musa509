@@ -224,7 +224,7 @@ There are several datasets that are prescribed for you to use in this part. Your
     )
     ```
 
-    **Discussion:**
+    **Discussion:** To identify Penn's main campus, I used OpenDataPhilly's [Philadelphia Universities and Colleges](https://www.opendataphilly.org/dataset/philadelphia-universities-and-colleges) dataset and the [Philadelphia zip codes](https://www.opendataphilly.org/dataset/zip-codes) dataset. I created the campus boundary by filtering out only the parcels owned by the University of Pennsylvania contained with in zip code 19104, and then drew a convex hull around those parcels to define the campus area. 
 
 9. With a query involving PWD parcels and census block groups, find the `geo_id` of the block group that contains Meyerson Hall. `ST_MakePoint()` and functions like that are not allowed.
 
