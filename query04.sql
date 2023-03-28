@@ -11,7 +11,7 @@ route_shapes as (
 bus_trip_shapes as (
     select
         shapes.geog,
-        st_length(shapes.geog) as shape_length,
+        st_length(shapes.geog::geography) as shape_length,
         trips.trip_headsign,
         trips.route_id
     from route_shapes as shapes
