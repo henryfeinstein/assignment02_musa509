@@ -199,7 +199,7 @@ There are several datasets that are prescribed for you to use in this part. Your
 
     Discuss your accessibility metric and how you arrived at it below:
 
-    **Description:**
+    **Description:** My accessibility metric represents the density of accessible stops across a neighborhood, a statistic calculated based on the `wheelchair_boarding` column in the `stops` GTFS dataset. The logic behind this metric is that while accessibility at any given stop is obviously paramount for measuring overall accessibility, having a lot of stops to choose from and not necessarily needing to travel far to reach an accessible stop is another important aspect. So, measuring the density of accessible stops rather than just the ratio or total number is a better approximation of the experience on the ground. 
 
 6.  What are the _top five_ neighborhoods according to your accessibility metric?
 

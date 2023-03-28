@@ -1,7 +1,3 @@
--- filter out all properties within 19104 and have Upenn as name
--- draw envelope around these properties
--- intersect with block groups and count how many are fully contained
-
 with
 
 penn_zipcode as (
