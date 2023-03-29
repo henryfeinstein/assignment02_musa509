@@ -1,4 +1,4 @@
-with 
+with
 
 henry_houses as (
     select

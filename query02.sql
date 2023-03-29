@@ -26,5 +26,5 @@ select
 from septa_bus_stop_surrounding_population as pop
 inner join septa.bus_stops as stops using (stop_id)
 where pop.estimated_pop_800m > 500
-order by pop.estimated_pop_800m 
-limit 8
+order by pop.estimated_pop_800m
+limit 8;

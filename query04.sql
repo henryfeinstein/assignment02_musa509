@@ -1,8 +1,8 @@
-with 
+with
 
 route_shapes as (
-    select 
-        shape_id, 
+    select
+        shape_id,
         st_makeline(array_agg(st_setsrid(st_makepoint(shape_pt_lon, shape_pt_lat), 4326) order by shape_pt_sequence)) as geog
     from septa.bus_shapes
     group by shape_id
@@ -26,4 +26,4 @@ select distinct
 from bus_trip_shapes as shapes
 inner join septa.bus_routes as routes using (route_id)
 order by shapes.shape_length desc
-limit 2
+limit 2;

@@ -5,6 +5,6 @@ select
     count(case when stops.wheelchair_boarding = 2 then 1 else null end) as num_bus_stops_inaccessible
 from azavea.neighborhoods as nhoods
 join septa.bus_stops as stops
-on st_intersects(nhoods.geog, stops.geog)
+    on st_intersects(nhoods.geog, stops.geog)
 group by nhoods.shape_area, neighborhood_name
-order by accessibility_metric desc
+order by accessibility_metric desc;

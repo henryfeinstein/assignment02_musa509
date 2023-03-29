@@ -8,6 +8,6 @@ meyerson_parcel as (
     where address = '220-30 S 34TH ST'
 )
 
-select geoid as geo_id from census.blockgroups_2020
+select census.blockgroups_2020.geoid as geo_id from census.blockgroups_2020
 join meyerson_parcel
-on st_intersects(census.blockgroups_2020.geog, meyerson_parcel.geog)
+    on st_intersects(census.blockgroups_2020.geog, meyerson_parcel.geog);
